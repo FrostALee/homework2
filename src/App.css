@@ -1,38 +1,173 @@
-.App {
+.headtitle {
   text-align: center;
+  font-size: 40px;
+  font-weight: bold; 
+  color: #0072CE;
+  letter-spacing: 50px;
+  font-family: 'EliceDigitalBaeum_Bold';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .Wrap{
+  background: linear-gradient( to top, #DDE5ED 10%, white, white, white)
+} */
+
+.Add_button {
+  width: 50px; 
+  height: 50px;
+  border-radius: 60px;
+  background-color: #307FE2;
+  text-align: center;
+  margin: 20px;
+  box-shadow: 2px 2px 5px black;
+  position: fixed;
+  top: 85%;
+  left: 90%;
+}
+
+.plus_icon {
+  width: 55%; 
+  padding: 10px; 
+  opacity: 50%; 
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .plus_icon:hover {
+    animation: plus_icon-spin infinite 3s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes plus_icon-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+}
+
+.work_wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  justify-content: flex-start;
+}
+
+.Card {
+  border: 8px solid #307FE2; 
+  width: 370px;
+  height: 180px;
+  background-color: White;
+  border-radius: 12px;
+  margin: 20px;
+  padding: 15px;
+  box-shadow: 3px 3px 5px gray;
+}
+
+.Card_title {
+  font-size: 25px;
+  width: 330px;
+  font-weight: bold;
+}
+
+.Card_icon {
+  width: 160px;
+  vertical-align: bottom;
+  text-align: right;
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.check_icon {
+  width: 11%;
+  margin-left: 15px;
+  opacity: 75%;
+}
+
+.dify_icon {
+  width: 12%;
+  margin-left: 15px;
+  opacity: 75%; 
+}
+
+.x_icon {
+  width: 9%; 
+  margin-left: 10px;
+  opacity: 75%;
+}
+
+.text_box1 {
+  font-size: 13px;
+  margin-top: 7px;
+  margin-bottom: 10px;
+}
+
+.text_box2 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.text_box3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #407EC9
+}
+
+.Add_wrap {
+  display: flex; 
+  flex-direction: column; 
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.Add_title_wrap{
+  text-align: center;
+  font-size: 25px;
+}
+
+.Add_title{
+  color: #307FE2;
+  font-weight: bold;
+  font-size: 27px;
+}
+
+.Add_box_wrap {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: nowrap; 
+  justify-content: center;
+}
+
+.Add_title_text {
+  font-weight: bold;
+  font-size: 17px;
+  color:#0072CE; 
+}
+
+.Add_input{
+  border: none;
+  padding: 10px;
+  height: 15px;
+  outline: none; 
+  width: 500px; 
+  font-size: 16px;
+}
+
+.buttonBox{
+  margin-top: 55px; 
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.save_button{
+  width: 200px;
+  height: 50px; 
+  background-color: #307FE2;
+  color: white; 
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  font-size: 20px;
 }
